@@ -14,6 +14,28 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+// API: V1 Routes
+Route::group(['prefix' => 'v1', 'as'=> 'v1'], function() {
+    // Authenticated routes, api_token parameter should be given
+    Route::group(['middleware' => 'auth:api'], function () {
+        Route::post('logout', 'Auth\AuthenticationController@logout');
+
+        Route::group(['prefix' => 'user', 'as' => 'user'], function () {
+            Route::post('', 'Auth\AuthenticationController@getUser');
+        });
+
+        // Patients API URLs
+        Route::group(['prefix' => 'patients', 'as' => 'patients'], function () {
+            Route::get('', 'PatientController@index');
+            Route::get('/{patient}', 'PatientController@show');
+            Route::post('', 'PatientController@store');
+            Route::put('/{patient}', 'PatientController@update');
+            Route::delete('/{patient}', 'PatientController@delete');
+        });
+    });
+
+    // User Authentication URL
+    Route::post('register', 'Auth\AuthenticationController@register');
+    Route::post('login', 'Auth\AuthenticationController@login');
 });
+
