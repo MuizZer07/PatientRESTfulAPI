@@ -47,9 +47,9 @@ class User extends Authenticatable
         return $this->api_token;
     }
 
-    public function role(){
-        return $this->hasOne('App\Role');
-    }
+//    public function role(){
+//        return $this->hasOne('App\Role');
+//    }
 
     public function permission_roles(){
         return $this->hasMany('App\PermissionRole');

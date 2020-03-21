@@ -26,41 +26,52 @@ class UserTableSeeder extends Seeder
                 'name' =>  $faker->name,
                 'email' => $faker->email,
                 'password' => 'patient@123',
+                'role' => 2
             ],
             [
                 'name' =>  $faker->name,
                 'email' => $faker->email,
                 'password' => 'patient@123',
+                'role' => 3
             ],
             [
                 'name' =>  $faker->name,
                 'email' => $faker->email,
                 'password' => 'patient@123',
+                'role' => 2
             ],
             [
                 'name' =>  $faker->name,
                 'email' => $faker->email,
                 'password' => 'patient@123',
+                'role' => 2
             ],
             [
                 'name' =>  $faker->name,
                 'email' => $faker->email,
                 'password' => 'patient@123',
+                'role' => 2
             ],
             [
                 'name' =>  $faker->name,
                 'email' => $faker->email,
                 'password' => 'patient@123',
+                'role' => 2
             ],
             [
                 'name' =>  $faker->name,
                 'email' => $faker->email,
                 'password' => 'patient@123',
+                'role' => 2
             ],
         ];
 
         foreach ($users as $user){
-            User::create($user);
+            $new_user = User::create($user);
+
+            if($new_user->role == 2){
+                $this->resolve(PermissionRolesTableSeeder::class)->run($new_user->id);
+            }
         }
     }
 }

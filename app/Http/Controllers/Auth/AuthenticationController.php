@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use App\User;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Artisan;
 
 class AuthenticationController extends Controller
 {
@@ -28,6 +29,9 @@ class AuthenticationController extends Controller
             $user = User::create($request->all());
             Auth::guard()->login($user);
 
+            Artisan::call('db:seed', [
+                '--class' => 'PermissionRolesTableSeeder'
+            ]);
             return $this->registered($request, $user);
         }catch (\Exception $ex){
             return response()->json([
