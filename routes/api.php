@@ -26,20 +26,37 @@ Route::group(['prefix' => 'v1', 'as'=> 'v1'], function() {
 
         // Admin URLs
         Route::group(['prefix' => 'admin', 'as' => 'admin'], function () {
-            // Admin functions to add
-            // see all users
-            // add new permission
-            // disable permission
-            // add permission to user
-            // create new user
-            // edit user
-            // delete user
+            // User model CRUD APIs for admin only
+            Route::group(['prefix' => 'user', 'as' => 'user'], function () {
+                Route::get('', 'UserController@index');
+                Route::get('/report', 'UserController@report');
+                Route::get('/{user}', 'UserController@show');
+                Route::post('', 'UserController@store');
+                Route::put('/{user}', 'UserController@update');
+                Route::delete('/{user}', 'UserController@delete');
+
+                // PermissionRoles model APIs for admin, add/remove permission for specific user
+                Route::group(['prefix' => 'permission', 'as' => 'permission'], function () {
+                    Route::post('/add', 'PermissionRoleController@store');
+                    Route::delete('/{permission_role}', 'PermissionRoleController@delete');
+                });
+            });
+
+            // Permission model CRUD APIs for admin only
+            Route::group(['prefix' => 'permission', 'as' => 'permission'], function () {
+                Route::get('', 'PermissionController@index');
+                Route::get('/{permission}', 'PermissionController@show');
+                Route::post('', 'PermissionController@store');
+                Route::put('/{permission}', 'PermissionController@update');
+                Route::delete('/{permission}', 'PermissionController@delete');
+            });
 
         });
 
         // Patients API URLs
         Route::group(['prefix' => 'patients', 'as' => 'patients'], function () {
             Route::get('', 'PatientController@index');
+            Route::get('/report', 'PatientController@report');
             Route::get('/{patient}', 'PatientController@show');
             Route::post('', 'PatientController@store');
             Route::post('/batch_create', 'PatientController@batch_store');

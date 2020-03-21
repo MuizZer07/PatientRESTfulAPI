@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Http\UserPermissions;
-use App\User;
 use Illuminate\Http\Request;
 use App\Patient;
 use Illuminate\Support\Facades\Auth;
@@ -20,6 +19,44 @@ class PatientController extends Controller
             'model' => 'patient',
             'data' => $patients,
             'message' => 'All Patient list!',
+        ], 200);
+    }
+
+    public function report(Request $request)
+    {
+        $start = $request->get('start');
+        $length = $request->get('length');
+        $condition = $request->get('condition');
+        $order_by = $request->get('order_by');
+        $draw = $request->get('draw');
+
+        $patients = Patient::all()->skip($start)->take($length);
+
+        if(!empty($condition)){
+            $condition_json = json_decode($condition);
+            foreach($condition_json as $key=>$value) {
+                $patients = $patients->where($key, '=', $value);
+            }
+        }
+
+        if(!empty($order_by)){
+            $order_by_json = json_decode($order_by);
+            foreach($order_by_json as $key=>$value) {
+                if($value == 'Asc'){
+                    $patients = $patients->sortBy($key);
+                }else if($value == 'Desc'){
+                    $patients = $patients->sortByDesc($key);
+                }
+            }
+        }
+
+        return response()->json([
+            'status' => 'true',
+            'model' => 'patient',
+            'data' => $patients,
+            'draw' => empty($draw) ? 1 : intval($draw),
+            'message' => 'Patient Report!',
+            'totalRecords' => count($patients)
         ], 200);
     }
 
