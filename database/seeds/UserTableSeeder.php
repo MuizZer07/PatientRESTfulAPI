@@ -20,6 +20,7 @@ class UserTableSeeder extends Seeder
                 'name' =>  'Muiz Ahmed',
                 'email' => 'muizxzer07@gmail.com',
                 'password' => 'patient@123',
+                'role' => 1
             ],
             [
                 'name' =>  $faker->name,

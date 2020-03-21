@@ -24,13 +24,29 @@ Route::group(['prefix' => 'v1', 'as'=> 'v1'], function() {
             Route::post('', 'Auth\AuthenticationController@getUser');
         });
 
+        // Admin URLs
+        Route::group(['prefix' => 'admin', 'as' => 'admin'], function () {
+            // Admin functions to add
+            // see all users
+            // add new permission
+            // disable permission
+            // add permission to user
+            // create new user
+            // edit user
+            // delete user
+
+        });
+
         // Patients API URLs
         Route::group(['prefix' => 'patients', 'as' => 'patients'], function () {
             Route::get('', 'PatientController@index');
             Route::get('/{patient}', 'PatientController@show');
             Route::post('', 'PatientController@store');
+            Route::post('/batch_create', 'PatientController@batch_store');
             Route::put('/{patient}', 'PatientController@update');
+            Route::put('/batch_update', 'PatientController@batch_update');
             Route::delete('/{patient}', 'PatientController@delete');
+            Route::delete('/batch_delete', 'PatientController@batch_delete');
         });
     });
 

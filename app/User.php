@@ -47,4 +47,21 @@ class User extends Authenticatable
         return $this->api_token;
     }
 
+    public function role(){
+        return $this->hasOne('App\Role');
+    }
+
+    public function permission_roles(){
+        return $this->hasMany('App\PermissionRole');
+    }
+
+    public function permissions(){
+        $array = collect();
+        $permission_roles = $this->permission_roles;
+        foreach ($permission_roles as $permission_role){
+            $permission = Permission::where('id', $permission_role->permission_id)->get()->first();
+            $array->push($permission->code);
+        }
+        return $array;
+    }
 }
