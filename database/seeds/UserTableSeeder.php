@@ -26,6 +26,24 @@ class UserTableSeeder extends Seeder
                 'name' =>  $faker->name,
                 'email' => $faker->email,
                 'password' => 'patient@123',
+                'role' => 1
+            ],
+            [
+                'name' =>  $faker->name,
+                'email' => $faker->email,
+                'password' => 'patient@123',
+                'role' => 1
+            ],
+            [
+                'name' =>  $faker->name,
+                'email' => $faker->email,
+                'password' => 'patient@123',
+                'role' => 2
+            ],
+            [
+                'name' =>  $faker->name,
+                'email' => $faker->email,
+                'password' => 'patient@123',
                 'role' => 2
             ],
             [
@@ -62,7 +80,7 @@ class UserTableSeeder extends Seeder
                 'name' =>  $faker->name,
                 'email' => $faker->email,
                 'password' => 'patient@123',
-                'role' => 2
+                'role' => 3
             ],
         ];
 

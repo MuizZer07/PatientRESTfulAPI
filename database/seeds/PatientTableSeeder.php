@@ -86,6 +86,545 @@ class PatientTableSeeder extends Seeder
                 'symptoms' => $faker->paragraph,
                 'occupation' => 'Service Holder'
             ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 34,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Service Holder'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 34,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Service Holder'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 34,
+                'on_medication' => true,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Service Holder'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 34,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Service Holder'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 34,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Service Holder'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 34,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Service Holder'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 34,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Service Holder'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 14,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Service Holder'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 34,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Service Holder'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 34,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Service Holder'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 34,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Service Holder'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 33,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Service Holder'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 24,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Service Holder'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 11,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Service Holder'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 23,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Service Holder'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 23,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Service Holder'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 54,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Service Holder'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 43,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Service Holder'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 24,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Service Holder'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 23,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Service Holder'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 12,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Service Holder'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 23,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Student'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 23,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Student'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 23,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Student'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 23,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Student'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 23,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Student'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 23,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Student'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 23,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Student'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 23,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Student'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 23,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Student'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 23,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Student'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 23,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Student'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 23,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Student'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 23,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Student'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 23,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Student'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 23,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Student'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 23,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Student'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 23,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Student'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 23,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Student'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 23,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Student'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 23,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Student'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 23,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Student'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 23,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Student'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 23,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Student'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 23,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Student'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 23,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'N/A'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 23,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Student'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 23,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'N/A'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 23,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'N/A'
+            ],[
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 23,
+                'on_medication' => true,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'N/A'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 21,
+                'on_medication' => true,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Student'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 21,
+                'on_medication' => true,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Student'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 22,
+                'on_medication' => true,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Student'
+            ],
+            [
+                'first_name' =>  $faker->firstName,
+                'last_name' =>  $faker->lastName,
+                'age' => 12,
+                'on_medication' => false,
+                'address' => $faker->address,
+                'phone_no' => $faker->phoneNumber,
+                'symptoms' => $faker->paragraph,
+                'occupation' => 'Student'
+            ],
         ];
 
         foreach ($patients as $patient){
