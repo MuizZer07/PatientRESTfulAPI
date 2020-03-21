@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Str;
+$DATABASE_URL=parse_url('postgres://xmcakqngetrvng:36e9eea4dc3c472c2c68ded85414f49cad197d10f98dccdd3b1f1d2698126df2@ec2-18-209-187-54.compute-1.amazonaws.com:5432/d5hv4nvgu0tdpp');
 
 return [
 
@@ -63,19 +64,33 @@ return [
             ]) : [],
         ],
 
+        // local config
+//        'pgsql' => [
+//            'driver' => 'pgsql',
+//            'url' => env('DATABASE_URL'),
+//            'host' => env('DB_HOST', '127.0.0.1'),
+//            'port' => env('DB_PORT', '5432'),
+//            'database' => env('DB_DATABASE', 'forge'),
+//            'username' => env('DB_USERNAME', 'forge'),
+//            'password' => env('DB_PASSWORD', ''),
+//            'charset' => 'utf8',
+//            'prefix' => '',
+//            'prefix_indexes' => true,
+//            'schema' => 'public',
+//            'sslmode' => 'prefer',
+//        ],
+        // heroku config
         'pgsql' => [
             'driver' => 'pgsql',
-            'url' => env('DATABASE_URL'),
-            'host' => env('DB_HOST', '127.0.0.1'),
-            'port' => env('DB_PORT', '5432'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
+            'host' => $DATABASE_URL["host"],
+            'port' => $DATABASE_URL["port"],
+            'database' => ltrim($DATABASE_URL["path"], "/"),
+            'username' => $DATABASE_URL["user"],
+            'password' => $DATABASE_URL["pass"],
             'charset' => 'utf8',
             'prefix' => '',
-            'prefix_indexes' => true,
             'schema' => 'public',
-            'sslmode' => 'prefer',
+            'sslmode' => 'require',
         ],
 
         'sqlsrv' => [
